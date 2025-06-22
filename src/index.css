@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-buttonColor: #eda415;
+  --color-headerColor: #003f62;
+  --font-poppins: "Poppins", sans-serif;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
