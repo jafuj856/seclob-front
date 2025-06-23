@@ -19,17 +19,17 @@ function SideBar({ selectedSubItems, setSelectedSubItems }) {
   }, []);
 
   return (
-    <div className="w-fit md:top-0 md:relative absolute top-[150px] left-10">
+    <div className="w-fit md:relative absolute  top-[150px] md:top-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-8 h-8 p-1 flex flex-col justify-between border border-buttonColor rounded-md absolute right-0 top-0 sm:hidden"
+        className="w-8 h-8 p-1 flex flex-col justify-between border border-buttonColor rounded-md   sm:hidden"
       >
         <div className="h-1 w-full rounded-full bg-buttonColor" />
         <div className="h-1 w-full rounded-full bg-buttonColor" />
         <div className="h-1 w-full rounded-full bg-buttonColor" />
       </button>
       <div
-        className={`w-[200px] text-[16px] font-[400] font-poppins flex-col gap-4 ${
+        className={`w-[200px] text-[16px] font-[400] font-poppins flex-col gap-4  ${
           isOpen ? "flex absolute left-0 z-30 bg-white p-4" : "hidden"
         } sm:flex`}
       >
