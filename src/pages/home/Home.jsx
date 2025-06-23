@@ -25,7 +25,9 @@ function Home() {
     setIsLoading(true);
     try {
       const data = await getData(
-        `/products?search=${search}&subCategory=${selectedSubItems}&limit=12&page=${page}`
+        `/products?search=${search ?? ""}&subCategory=${
+          selectedSubItems ?? ""
+        }&limit=12&page=${page ?? 1}`
       );
       console.log(data);
       setProduct(data?.data?.products);
