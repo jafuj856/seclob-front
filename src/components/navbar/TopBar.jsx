@@ -4,8 +4,8 @@ import React, { useEffect, useState } from "react";
 function TopBar({ isHid, setSearch, search }) {
   const [search1, setSearch1] = useState();
   useEffect(() => {
-    if (!search1) {
-      setSearch(search1);
+    if (!search1 && setSearch) {
+      setSearch("");
     }
   }, [search1]);
   return (
